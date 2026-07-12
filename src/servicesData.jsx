@@ -51,12 +51,14 @@ export const servicesData = {
                 </svg>
             ),
             desc: "<strong>Jessie Sarrette</strong><br>Technicienne juridique, Thérapeute en relation d'aide.<br><br>Son rôle est de vous accompagner lorsque les difficultés traumatiques familiales ou personnelles se superposent à des réalités légales (séparation, garde d'enfant, victimisation, agression). Professionnelle et rassurante, elle offre un accompagnement thérapeutique, vulgarise les processus juridiques complexes et vous aide afin d'alléger votre charge mentale.",
-            listTitle: "Domaines d'accompagnement :",
+            listTitle: "Une approche enrichie par une expérience en technique juridique",
+            intro: "Notre parcours en technique juridique constitue un atout complémentaire à notre pratique en relation d’aide. Cette expérience nous permet de :",
             points: [
-                "Aperçu détaillé du droit de la famille, du droit civil et des droits des victimes.",
-                "Préparation aux audiences, procédures judiciaires et recherche d'aide juridictionnelle.",
-                "Assistance pour remplir les formulaires administratifs et monter les dossiers.",
-                "Orientation vers des avocats partenaires de confiance spécialisés."
+                "Comprendre les réalités vécues par les personnes confrontées à des démarches judiciaires ou administratives.",
+                "Mieux saisir les enjeux entourant les situations de violence, d’agression sexuelle, de séparation ou de conflits familiaux.",
+                "Expliquer le fonctionnement général de certains processus avec un langage simple, sans offrir de conseils juridiques.",
+                "Vous accompagner avec sensibilité lorsque vos difficultés personnelles s’entrecroisent avec des démarches officielles.",
+                "Favoriser une communication claire, une écoute attentive et une organisation structurée de l’accompagnement."
             ]
         },
         en: {
@@ -68,12 +70,14 @@ export const servicesData = {
                 </svg>
             ),
             desc: "<strong>Jessie Sarrette</strong><br>Legal Technician, Relational Therapist.<br><br>Her role is to accompany you when traumatic family or personal difficulties overlap with legal realities (separation, child custody, victimization, assault). Professional and reassuring, she offers therapeutic support, demystifies complex legal processes, and helps you ease your mental load.",
-            listTitle: "Areas of Guidance:",
+            listTitle: "An approach enriched by experience in legal techniques",
+            intro: "Our background in legal techniques is a complementary asset to our relational therapy practice. This experience allows us to:",
             points: [
-                "Detailed overview of family law, civil law, and victim rights.",
-                "Preparation for hearings, court procedures, and legal representation.",
-                "Assistance with administrative paperwork and drafting claims.",
-                "Referrals to trusted, specialized legal aid lawyers."
+                "Understand the realities experienced by individuals facing legal or administrative procedures.",
+                "Better grasp the challenges surrounding situations of violence, sexual assault, separation, or family conflicts.",
+                "Explain the general functioning of certain processes in simple terms, without providing legal advice.",
+                "Support you with sensitivity when your personal difficulties intersect with official procedures.",
+                "Promote clear communication, attentive listening, and a structured organization of support."
             ]
         }
     },

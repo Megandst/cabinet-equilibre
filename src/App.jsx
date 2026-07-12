@@ -250,6 +250,7 @@ function App() {
                 <div className="nav-container">
                     <a href="#home" className="logo" aria-label="Cabinet Équilibre Accueil">
                         <div className="logo-wrap" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                            <img src="images/logo-rectangle.jpg" alt="Cabinet Équilibre Logo" style={{ height: '50px', width: 'auto', borderRadius: '6px', border: '2.5px solid white', boxShadow: 'var(--shadow-sm)' }} />
                             <div className="logo-text">
                                 <span className="logo-title">Cabinet Équilibre</span>
                                 <span className="logo-sub">{t("logo-sub")}</span>
@@ -334,7 +335,7 @@ function App() {
                         
                         <div className="hero-image-container">
                             <div className="hero-image-wrapper">
-                                <img src="images/logo.jpg" alt="Illustration apaisante de femmes se soutenant les unes les autres, entourées de branches d'olivier" />
+                                <img src="images/logo-rectangle.jpg" alt="Illustration apaisante de femmes se soutenant les unes les autres, entourées de branches d'olivier" />
                             </div>
                         </div>
                     </div>
@@ -423,6 +424,9 @@ function App() {
                                 <h3 className="modal-title">{servicesData[activeServiceKey][lang].title}</h3>
                                 <p className="modal-desc" dangerouslySetInnerHTML={{ __html: servicesData[activeServiceKey][lang].desc }}></p>
                                 <h4 className="modal-list-title">{servicesData[activeServiceKey][lang].listTitle}</h4>
+                                {servicesData[activeServiceKey][lang].intro && (
+                                    <p className="modal-list-intro" style={{ marginBottom: '16px', color: 'var(--olive)', fontSize: '0.95rem' }}>{servicesData[activeServiceKey][lang].intro}</p>
+                                )}
                                 <ul className="modal-list">
                                     {servicesData[activeServiceKey][lang].points.map((pt, idx) => (
                                         <li key={idx}>{pt}</li>
@@ -613,6 +617,20 @@ function App() {
                             <span className="section-subtitle">{t("about-subtitle")}</span>
                             <h2 className="section-title">{t("about-title")}</h2>
                             <p className="section-desc" style={{ marginBottom: '32px' }} dangerouslySetInnerHTML={{ __html: t("about-desc") }}></p>
+                            
+                            <div className="philosophy-intervention" style={{ marginTop: '24px', marginBottom: '32px' }}>
+                                <h3 className="intervention-title" style={{ fontSize: '1.25rem', fontFamily: 'var(--font-heading)', color: 'var(--text-dark)', marginBottom: '8px', fontWeight: 600 }}>{t("about-intervention-title")}</h3>
+                                <p className="intervention-subtitle" style={{ fontSize: '1rem', color: 'var(--olive)', marginBottom: '12px' }}>{t("about-intervention-subtitle")}</p>
+                                <p className="intervention-intro" style={{ fontSize: '0.95rem', fontWeight: 500, color: 'var(--text-dark)', marginBottom: '8px' }}>{t("about-intervention-intro")}</p>
+                                <ul className="intervention-list" style={{ listStyleType: 'none', paddingLeft: 0 }}>
+                                    {[1, 2, 3, 4, 5, 6, 7, 8].map(num => (
+                                        <li key={num} style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', marginBottom: '8px', fontSize: '0.95rem', color: 'var(--text-dark)' }}>
+                                            <span style={{ color: 'var(--accent-rose)', fontWeight: 'bold' }}>•</span>
+                                            <span>{t(`about-intervention-p${num}`)}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
                             
                             <div className="philosophy-features">
                                 <div className="feature-item">
@@ -812,7 +830,7 @@ function App() {
                 <div className="container footer-grid">
                     <div className="footer-brand">
                         <div className="footer-logo-wrap" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
-                            <img src="images/logo.jpg" alt="Cabinet Équilibre Logo" style={{ width: '50px', height: '50px', borderRadius: '50%', border: '1px solid rgba(250, 242, 240, 0.2)', objectFit: 'cover' }} />
+                            <img src="images/logo-rectangle.jpg" alt="Cabinet Équilibre Logo" style={{ width: '50px', height: '50px', borderRadius: '50%', border: '1px solid rgba(250, 242, 240, 0.2)', objectFit: 'cover' }} />
                             <div>
                                 <span className="footer-logo-title" style={{ marginBottom: 0, lineHeight: 1 }}>Cabinet Équilibre</span>
                                 <span className="footer-logo-sub" style={{ marginBottom: 0, fontSize: '0.7rem', letterSpacing: '1px' }}>{t("logo-sub")}</span>
