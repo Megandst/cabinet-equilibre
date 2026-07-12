@@ -316,7 +316,7 @@ section {
     border: 8px solid var(--white);
     background-color: var(--white);
     width: 100%;
-    max-width: 550px;
+    max-width: 480px;
     margin: 0 auto;
 }
 
